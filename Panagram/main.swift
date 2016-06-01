@@ -8,5 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
+let fromBlogArticle = "https://www.raywenderlich.com/128039/command-line-programs-os-x-tutorial?utm_campaign=Swift%252BSandbox&utm_medium=email&utm_source=Swift_Sandbox_42"
 
+let panagram = Panagram()
+
+if Process.argc < 2 {
+    panagram.interactiveMode()
+} else {
+    panagram.staticMode()
+}
